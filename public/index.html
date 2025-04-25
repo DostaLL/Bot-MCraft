@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Minecraft Bot</title>
+  <style>
+    body {
+      margin: 0;
+      background: #1e1e1e;
+      color: white;
+      font-family: sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 5px;
+      border-radius: 8px;
+      border: none;
+    }
+
+    input {
+      width: 250px;
+    }
+
+    button {
+      background: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+
+    #console {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 400px;
+      max-height: 300px;
+      background: #111;
+      border: 1px solid #444;
+      padding: 10px;
+      font-family: monospace;
+      font-size: 14px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Настройки бота Minecraft</h2>
+
+  <input type="text" id="username" placeholder="Никнейм">
+  <input type="text" id="proxy" placeholder="Прокси (необязательно)">
+  <input type="text" id="regCommand" placeholder="Команда регистрации">
+  <input type="text" id="roleplayCommand" placeholder="Команда входа /roleplay">
+  <button onclick="startBot()">Запустить бота</button>
+
+  <div id="console">[Консоль бота]</div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
